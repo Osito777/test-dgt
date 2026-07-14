@@ -17,7 +17,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- BASE DE DATOS DE PREGUNTAS (Imágenes estrictas y oficiales de tráfico) ---
+# --- BASE DE DATOS DE PREGUNTAS (Localizadas con tus archivos de GitHub) ---
 preguntas = [
     {
         "p": "1. ¿Es aconsejable conducir un turismo calzado con unas chanclas?",
@@ -27,17 +27,17 @@ preguntas = [
             "c) Sí, porque permiten un manejo más rápido y seguro de los pedales."
         ],
         "c": "a",
-        "img": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=600"
+        "img": "1.png"
     },
     {
         "p": "2. ¿Puede realizar un cambio de sentido en un lugar donde esté prohibido adelantar?",
         "ops": [
             "a) Sí, excepto entre la puesta y la salida de sol, porque disminuye la visibilidad.",
             "b) No, salvo que el cambio de sentido esté expresamente autorizado.",
-            "c) Sí, cuando la circulation en sentido contrario lo permita."
+            "c) Sí, cuando la circulación en sentido contrario lo permita."
         ],
         "c": "b",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Spain_traffic_signal_r306.svg" # Señal prohibido adelantar
+        "img": "2.png"
     },
     {
         "p": "3. En un vehículo de autoescuela realizando clases prácticas, ¿quién es considerado el conductor?",
@@ -47,7 +47,7 @@ preguntas = [
             "c) El profesor, por ser responsable de los mandos adicionales."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=600"
+        "img": "3.png"
     },
     {
         "p": "4. ¿Dónde está permitido que viaje un niño que no alcance los 135 centímetros de estatura?",
@@ -57,7 +57,7 @@ preguntas = [
             "c) En el asiento trasero, utilizando siempre un dispositivo de retención homologado en función de su talla y peso."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1510511233900-1982d92bd835?auto=format&fit=crop&q=80&w=600" # Silla de coche infantil
+        "img": "https://images.unsplash.com/photo-1510511233900-1982d92bd835?auto=format&fit=crop&q=80&w=600"
     },
     {
         "p": "5. Con esta señalización (S-7 Velocidad máxima aconsejada), ¿a qué velocidad debe circular?",
@@ -67,7 +67,7 @@ preguntas = [
             "c) A 30 km/h, como recomendación, durante el tramo que subsista el peligro."
         ],
         "c": "c",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Spain_traffic_signal_s7.svg" # Señal de velocidad recomendada de la DGT
+        "img": "5.png"
     },
     {
         "p": "6. Una línea blanca continua sobre la calzada, sensiblemente más ancha que en el caso general...",
@@ -77,7 +77,7 @@ preguntas = [
             "c) indica el borde de la calzada."
         ],
         "c": "a",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/4/41/Bus_lane_Madrid_2014.jpg" # Carril Bus/Especial con línea ancha
+        "img": "6.png"
     },
     {
         "p": "7. ¿Cuál es la sanción por no tener el seguro obligatorio del vehículo?",
@@ -87,7 +87,7 @@ preguntas = [
             "c) La inmovilización del vehículo, pero no supone sanción económica."
         ],
         "c": "b",
-        "img": "https://images.unsplash.com/photo-1518364538800-6bcb3f25da49?auto=format&fit=crop&q=80&w=600" # Control policial / Multa
+        "img": "7.png"
     },
     {
         "p": "8. ¿Al aumentar la velocidad incrementa la probabilidad de muerte en caso de atropello a un peatón?",
@@ -97,7 +97,7 @@ preguntas = [
             "c) La probabilidad es la misma, dependerá exclusivamente del estado de salud del peatón."
         ],
         "c": "b",
-        "img": "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&q=80&w=600" # Paso de peatones estricto
+        "img": "8.png"
     },
     {
         "p": "9. ¿Cuántos espejos retrovisores tienen que llevar instalados las motocicletas?",
@@ -107,7 +107,7 @@ preguntas = [
             "c) Un espejo exterior izquierdo si no superan los 100 km/h y dos, uno en cada lado, si la velocidad es mayor."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=600" # Retrovisor de moto de cerca
+        "img": "9.png"
     },
     {
         "p": "10. ¿Está permitida la circulación de animales por una carretera convencional?",
@@ -117,7 +117,7 @@ preguntas = [
             "c) Sí, excepto cuando circulen en rebaño."
         ],
         "c": "a",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/d/da/Spain_traffic_signal_p23.svg" # Paso de animales domésticos
+        "img": "https://upload.wikimedia.org/wikipedia/commons/d/da/Spain_traffic_signal_p23.svg"
     },
     {
         "p": "11. ¿Qué aportan a la seguridad vial los sistemas avanzados de ayuda a la conducción también conocidos como ADAS?",
@@ -127,7 +127,7 @@ preguntas = [
             "c) Mejoran notablemente la seguridad activa del vehículo."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=600" # Cuadro digital de tecnología automotriz ADAS
+        "img": "11.png"
     },
     {
         "p": "12. ¿Cuál es la tasa de alcohol máxima permitida a un conductor novel?",
@@ -137,7 +137,7 @@ preguntas = [
             "c) 0,15 miligramos de alcohol por litro de aire espirado."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1578318285516-72cb61266858?auto=format&fit=crop&q=80&w=600" # Alcoholímetro policial oficial
+        "img": "12.png"
     },
     {
         "p": "13. Cuando un vehículo accidentado comienza a arder, ¿qué se debe hacer primero?",
@@ -147,7 +147,7 @@ preguntas = [
             "c) Ir a buscar ayuda."
         ],
         "c": "b",
-        "img": "https://images.unsplash.com/photo-1508873696983-2df519f0397e?auto=format&fit=crop&q=80&w=600" # Extintor de incendios / Fuego en vehículo
+        "img": "13.png"
     },
     {
         "p": "14. En esta situación (semáforo a la izquierda en rojo), ¿qué debe hacer si va a girar a la izquierda?",
@@ -157,7 +157,7 @@ preguntas = [
             "c) Sólo detenerse si hay peatones cruzando."
         ],
         "c": "b",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Semaforo_Rojo.jpg" # Semáforo en rojo estricto de carril izquierdo
+        "img": "14.png"
     },
     {
         "p": "15. ¿Está permitido colocar la señal luminosa de preseñalización de peligro, V-16, alejada del vehículo averiado?",
@@ -167,7 +167,7 @@ preguntas = [
             "c) No, se debe colocar en la parte más alta posible del vehículo inmovilizado."
         ],
         "c": "c",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/f/ff/V-16_Geolocalizada.jpg" # Señal luminosa V-16 en el techo
+        "img": "15.png"
     },
     {
         "p": "16. Para entrar en una autopista, ¿a qué velocidad debe circular?",
@@ -177,7 +177,7 @@ preguntas = [
             "c) A la velocidad adecuada que permita incorporarse con seguridad."
         ],
         "c": "c",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/8/82/Spain_traffic_signal_s1.svg" # Entrada a Autopista DGT
+        "img": "16.png"
     },
     {
         "p": "17. ¿Qué es una detención?",
@@ -187,7 +187,7 @@ preguntas = [
             "c) Un estacionamiento sin bajarse del vehículo."
         ],
         "c": "a",
-        "img": "https://images.unsplash.com/photo-1494832421162-538999141953?auto=format&fit=crop&q=80&w=600" # Retención / Atasco
+        "img": "https://images.unsplash.com/photo-1494832421162-538999141953?auto=format&fit=crop&q=80&w=600"
     },
     {
         "p": "18. Esta señal (perfil sinuoso con concavidad hacia arriba) indica peligro por la proximidad de...",
@@ -197,7 +197,7 @@ preguntas = [
             "c) un resalto en la vía."
         ],
         "c": "b",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Spain_traffic_signal_p15a.svg" # Señal de Badén oficial
+        "img": "18.png"
     },
     {
         "p": "19. En condiciones normales, la velocidad adecuada está siempre...",
@@ -207,7 +207,7 @@ preguntas = [
             "c) por encima de la velocidad mínima y por debajo de la máxima."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&q=80&w=600" # Velocímetro / Cuadro de instrumentos de velocidad
+        "img": "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&q=80&w=600"
     },
     {
         "p": "20. ¿Tiene alguna obligación cuando su vehículo va a ser adelantado?",
@@ -217,7 +217,7 @@ preguntas = [
             "c) Sí, ceñirse al borde derecho de la calzada para facilitar la maniobra."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1619551401763-7da9f7f9011a?auto=format&fit=crop&q=80&w=600" # Coche ciñéndose al carril derecho
+        "img": "20.png"
     },
     {
         "p": "21. ¿Qué distancia de separación respecto al de delante debe mantener un vehículo de más de 3.500 kg en autovía?",
@@ -227,7 +227,7 @@ preguntas = [
             "c) La que le permita detenerse sin colisionar con él."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600" # Camión grande en autovía
+        "img": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600"
     },
     {
         "p": "22. El funcionamiento del airbag, ¿puede llegar a ser peligroso en un accidente?",
@@ -237,7 +237,7 @@ preguntas = [
             "c) No."
         ],
         "c": "b",
-        "img": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=600" # Salpicadero con sistema de seguridad pasiva
+        "img": "22.png"
     },
     {
         "p": "23. ¿Cuál debe ser su comportamiento al ceder el paso?",
@@ -247,7 +247,7 @@ preguntas = [
             "c) No obligar al vehículo prioritario a modificar bruscamente su trayectoria o velocidad."
         ],
         "c": "c",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/8/87/Spain_traffic_signal_r1.svg" # Señal de Ceda el Paso oficial de España
+        "img": "https://upload.wikimedia.org/wikipedia/commons/8/87/Spain_traffic_signal_r1.svg"
     },
     {
         "p": "24. En esta vía de poblado de un solo carril por sentido, ¿a qué velocidad máxima se circula sin señales?",
@@ -257,7 +257,7 @@ preguntas = [
             "c) A 50 km/h."
         ],
         "c": "a",
-        "img": "https://images.unsplash.com/photo-1513829090374-efd6d17d47aa?auto=format&fit=crop&q=80&w=600" # Calle estrecha de un solo carril en poblado
+        "img": "24.png"
     },
     {
         "p": "25. La fatiga, ¿provoca lentitud y falta de precisión en los movimientos?",
@@ -267,7 +267,7 @@ preguntas = [
             "c) Sí, por lo cual la conducción se hace más peligrosa."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&q=80&w=600" # Persona fatigada al volante / cansancio
+        "img": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&q=80&w=600"
     },
     {
         "p": "26. Si los paneles de mensaje variable permiten circular por carril VAO a turismos con etiqueta B, ¿qué ocupación mínima requiere?",
@@ -277,7 +277,7 @@ preguntas = [
             "c) Dos ocupantes, sin incluir al conductor."
         ],
         "c": "b",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/2/29/S-15a-Spain.svg" # Panel carril VAO de la DGT
+        "img": "26.png"
     },
     {
         "p": "27. Los accidentes de tráfico generan...",
@@ -287,7 +287,7 @@ preguntas = [
             "c) daños materiales y costes humanos, únicamente."
         ],
         "c": "b",
-        "img": "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&q=80&w=600" # Simulación colisión / Accidente
+        "img": "27.png"
     },
     {
         "p": "28. El efecto submarino, que provoca graves lesiones al conductor, está relacionado con...",
@@ -297,7 +297,7 @@ preguntas = [
             "c) Un consumo excesivo de alcohol, medicamentos o drogas."
         ],
         "c": "b",
-        "img": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=600" # Cinturón de seguridad de cerca
+        "img": "28.png"
     },
     {
         "p": "29. Si queda detenido en un atasco, ¿qué distancia es aconsejable mantener con el coche de delante?",
@@ -307,7 +307,7 @@ preguntas = [
             "c) Dos o tres metros para evitar alcances traseros."
         ],
         "c": "c",
-        "img": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=600" # Retención urbana / Distancia entre coches
+        "img": "29.png"
     },
     {
         "p": "30. Fuera de poblado, ¿qué separación lateral debe dejar una motocicleta al adelantar un camión?",
@@ -317,7 +317,7 @@ preguntas = [
             "c) Una separación que considere segura en función de las circunstancias."
         ],
         "c": "b",
-        "img": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=600" # Adelantamiento en carretera convencional
+        "img": "30.png"
     }
 ]
 
@@ -333,12 +333,12 @@ if st.session_state.inicio:
     st.title("🚗 Autoescuela Soriana - Test DGT")
     st.write("## ¡Pon a prueba tus conocimientos para la licencia española!")
     
-    # Carga local directa de tus imágenes subidas a GitHub (12.png y 13.png)
+    # Se cargan las fotos de portada x.png e y.png locales desde tu GitHub
     col1, col2 = st.columns(2)
     with col1:
-        st.image("13.png", caption="🐶 Nuestra mascota de la autoescuela te desea suerte.")
+        st.image("x.png", caption="🐶 Nuestra mascota de la autoescuela te desea suerte.")
     with col2:
-        st.image("12.png", caption="🛴 ¿Conducir en chanclas? Spoiler de la Pregunta 1...")
+        st.image("y.png", caption="🛴 ¿Conducir en chanclas? Spoiler de la Pregunta 1...")
         
     st.markdown("""
     ---
@@ -376,17 +376,15 @@ elif st.session_state.index < len(preguntas):
     
     st.markdown(f"<div class='card'><h4>{q['p']}</h4></div>", unsafe_allow_html=True)
     
-    # Mostrar la imagen estricta y oficial de la DGT para la pregunta
+    # Carga de imagen (local o remota)
     st.image(q["img"], use_container_width=True)
     
     # Opciones de respuesta
     seleccion = st.radio("Elige la respuesta correcta:", q["ops"], key=f"ans_{q_idx}")
     
     if st.button("SIGUIENTE DESAFÍO ➡️"):
-        # Determinar letra seleccionada ('a', 'b' o 'c')
         letra_sel = seleccion[0].lower()
         
-        # Validar
         if letra_sel != q["c"]:
             st.session_state.errores += 1
             
