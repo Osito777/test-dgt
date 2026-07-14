@@ -1,7 +1,7 @@
 import streamlit as st
 
 # --- CONFIGURACIÓN DE PÁGINA ---
-st.set_page_config(page_title="Autoescuela Soriana - Test DGT", page_icon="🚗", layout="centered")
+st.set_page_config(page_title="Autoescuela CHESTER - Test DGT", page_icon="🚗", layout="centered")
 
 # --- ESTILOS PERSONALIZADOS ---
 st.markdown("""
@@ -330,15 +330,11 @@ if "inicio" not in st.session_state:
 
 # --- PANTALLA DE BIENVENIDA ---
 if st.session_state.inicio:
-    st.title("🚗 Autoescuela Soriana - Test DGT")
+    st.title("🚗 Autoescuela CHESTER - Test DGT")
     st.write("## ¡Pon a prueba tus conocimientos para la licencia española!")
     
-    # Se cargan las fotos de portada x.png e y.png locales desde tu GitHub
-    col1, col2 = st.columns(2)
-    with col1:
-        st.image("x.png", caption="🐶 Nuestra mascota de la autoescuela te desea suerte.")
-    with col2:
-        st.image("y.png", caption="🛴 ¿Conducir en chanclas? Spoiler de la Pregunta 1...")
+    # Portada simplificada: solo la imagen y.png centrada
+    st.image("y.png", use_container_width=True, caption="🏆 ¡Bienvenido a Autoescuela CHESTER! Tu aprobado está más cerca.")
         
     st.markdown("""
     ---
@@ -400,7 +396,7 @@ else:
     
     if errores <= 3:
         st.balloons()
-        st.markdown("<p class='apto'>🏆 ¡APTO! Has llegado a El Collado de Soria de forma segura y sin multas. ¡Estás listo para el examen real!</p>", unsafe_allow_html=True)
+        st.markdown("<p class='apto'>🏆 ¡APTO! Has llegado a El Collado de Soria de forma segura y sin multas en Autoescuela CHESTER. ¡Estás listo para el examen real!</p>", unsafe_allow_html=True)
     else:
         st.markdown("<p class='no-apto'>❌ NO APTO. La grúa municipal ha retirado tu coche en la Puerta de la Villa. Necesitas repasar (máximo 3 fallos).</p>", unsafe_allow_html=True)
         
