@@ -333,8 +333,8 @@ if st.session_state.inicio:
     st.title("🚗 Autoescuela CHESTER - Test DGT")
     st.write("## ¡Pon a prueba tus conocimientos para la licencia española!")
     
-    # Portada simplificada: solo la imagen y.png centrada
-    st.image("y.png", use_container_width=True, caption="🏆 ¡Bienvenido a Autoescuela CHESTER! Tu aprobado está más cerca.")
+    # Se muestra únicamente la foto y.png al inicio
+    st.image("y.png", caption="🛴 ¿Conducir en chanclas? Spoiler de la Pregunta 1...")
         
     st.markdown("""
     ---
@@ -372,7 +372,7 @@ elif st.session_state.index < len(preguntas):
     
     st.markdown(f"<div class='card'><h4>{q['p']}</h4></div>", unsafe_allow_html=True)
     
-    # Carga de imagen (local o remota)
+    # Carga de imagen
     st.image(q["img"], use_container_width=True)
     
     # Opciones de respuesta
@@ -396,7 +396,7 @@ else:
     
     if errores <= 3:
         st.balloons()
-        st.markdown("<p class='apto'>🏆 ¡APTO! Has llegado a El Collado de Soria de forma segura y sin multas en Autoescuela CHESTER. ¡Estás listo para el examen real!</p>", unsafe_allow_html=True)
+        st.markdown("<p class='apto'>🏆 ¡APTO! Has llegado a El Collado de Soria de forma segura y sin multas. ¡Estás listo para el examen real!</p>", unsafe_allow_html=True)
     else:
         st.markdown("<p class='no-apto'>❌ NO APTO. La grúa municipal ha retirado tu coche en la Puerta de la Villa. Necesitas repasar (máximo 3 fallos).</p>", unsafe_allow_html=True)
         
@@ -408,8 +408,26 @@ else:
         tu_resp = st.session_state.respuestas_usuario[i]
         if tu_resp != q["c"]:
             any_error = True
+            
+            # Buscar el texto completo de la opción correcta
+            opcion_correcta_texto = ""
+            for opcion in q["ops"]:
+                if opcion.strip().lower().startswith(q["c"]):
+                    opcion_correcta_texto = opcion
+                    break
+            
             st.warning(f"**Pregunta {i+1} (Etapa {1 if i<10 else 2 if i<20 else 3}):** {q['p']}")
-            st.write(f"👉 Tu respuesta: `{tu_resp.upper()}` | Respuesta correcta: `{q['c'].upper()}`")
+            
+            # Encontrar también el texto completo de la opción que eligió el usuario
+            opcion_usuario_texto = ""
+            for opcion in q["ops"]:
+                if opcion.strip().lower().startswith(tu_resp):
+                    opcion_usuario_texto = opcion
+                    break
+                    
+            st.write(f"❌ **Tu respuesta:** {opcion_usuario_texto}")
+            st.write(f"✔️ **Respuesta correcta:** {opcion_correcta_texto}")
+            st.write(" ")
             
     if not any_error:
         st.success("✨ ¡Increíble! ¡Un viaje perfecto sin un solo fallo de Almazán a Soria!")
