@@ -332,12 +332,12 @@ if st.session_state.inicio:
     st.title("🚗 Simulador DGT Permiso B - Examen Práctico")
     st.write("### ¡Pon a prueba tus conocimientos para la licencia española!")
     
-    # Mostrar imágenes adjuntas
+    # Mostrar imágenes adjuntas con los nombres correctos
     col1, col2 = st.columns(2)
     with col1:
-        st.image("image_9a591f.jpg", caption="🐶 Nuestra mascota de la autoescuela te desea suerte.")
+        st.image("13.png", caption="🐶 Nuestra mascota de la autoescuela te desea suerte.")
     with col2:
-        st.image("image_9a565c.jpg", caption="🛴 ¿Conducir en chanclas? Spoiler de la Pregunta 1...")
+        st.image("12.png", caption="🛴 ¿Conducir en chanclas? Spoiler de la Pregunta 1...")
         
     st.markdown("""
     **Reglas del Examen Oficial:**
@@ -406,4 +406,3 @@ else:
         st.session_state.errores = 0
         st.session_state.respuestas_usuario = []
         st.rerun()
-
